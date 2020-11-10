@@ -1,9 +1,7 @@
 import React, { Component } from "react";
 
-import { FaPlus } from "react-icons/fa";
-
-import { FaEdit, FaWindowClose } from "react-icons/fa";
-
+import Tarefas from "./Tarefas";
+import Form from "./Form";
 import "./Main.css";
 
 export default class Main extends Component {
@@ -12,6 +10,24 @@ export default class Main extends Component {
     tarefas: [],
     index: -1,
   };
+
+  componentDidMount() {
+    const tarefas = JSON.parse(localStorage.getItem("tarefas"));
+
+    if (!tarefas) return;
+
+    this.setState({
+      tarefas,
+    });
+  }
+
+  componentDidUpdate(prevProps, prevState) {
+    const { tarefas } = this.state;
+
+    if (tarefas === prevState.tarefas) return;
+
+    localStorage.setItem("tarefas", JSON.stringify(tarefas));
+  }
 
   handleSubmit = (e) => {
     e.preventDefault();
@@ -70,32 +86,17 @@ export default class Main extends Component {
       <div className="main">
         <h1>Lista de tarefas</h1>
 
-        <p>{novaTarefa}</p>
+        <Form
+          handleSubmit={this.handleSubmit}
+          handleInput={this.handleInput}
+          novaTarefa={novaTarefa}
+        />
 
-        <form onSubmit={this.handleSubmit} className="form">
-          <input onChange={this.handleInput} value={novaTarefa} type="text" />
-          <button type="submit">
-            <FaPlus />
-          </button>
-        </form>
-
-        <ul className="tarefas">
-          {tarefas.map((tarefa, index) => (
-            <li key={tarefa}>
-              {tarefa}
-              <span>
-                <FaEdit
-                  onClick={(e) => this.handleEdit(e, index)}
-                  className="edit"
-                />
-                <FaWindowClose
-                  onClick={(e) => this.handleDelete(e, index)}
-                  className="delete"
-                />
-              </span>
-            </li>
-          ))}
-        </ul>
+        <Tarefas
+          tarefas={tarefas}
+          handleEdit={this.handleEdit}
+          handleDelete={this.handleDelete}
+        />
       </div>
     );
   }
