@@ -1,4 +1,5 @@
 import React from "react";
+import { toast } from "react-toastify";
 
 import { Container } from "../../styles/GlobalStyles";
 import { Title } from "./styled";
