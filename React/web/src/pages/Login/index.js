@@ -5,24 +5,15 @@ import { useDispatch } from "react-redux";
 import axios from "../../services/axios";
 import { Container } from "../../styles/GlobalStyles";
 import { Title } from "./styled";
+import * as exampleActions from "../../store/modules/example/actions";
 
 export default function Login() {
   const dispatch = useDispatch();
 
-  useEffect(() => {
-    async function getData() {
-      const { data } = await axios.get("/alunos");
-      console.log(data);
-    }
-    getData();
-  }, []);
-
   function handleClick(e) {
     e.preventDefault();
 
-    dispatch({
-      type: "BOTAO_CLICADO",
-    });
+    dispatch(exampleActions.clicaBotao());
   }
 
   return (
