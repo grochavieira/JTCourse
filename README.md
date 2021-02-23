@@ -13,8 +13,8 @@ Conteúdos que foram ministrados: Javascript e TypeScript - front-end e back-end
   - [x] Lógica de Programação;
   - [x] Funções (Avançado);
   - [x] Arrays (Avançado);
-  - [ ] Objetos e prototypes (Avançado);
-  - [ ] Classes;
+  - [x] Objetos e prototypes (Avançado);
+  - [x] Classes;
   - [x] assíncrono;
   - [x] Tooling e ES6 Modules;
   - [ ] Expressões Regulares;
@@ -25,10 +25,10 @@ Conteúdos que foram ministrados: Javascript e TypeScript - front-end e back-end
   - [x] Deploy da aplicação (Projeto Agenda);
   - [x] Criando uma API REST;
 - [ ] React:
-  - [ ] Básico;
+  - [x] Básico;
   - [ ] Redux + Redux Saga (Avançado);
 - [ ] TypeScript:
-  - [ ] Instalação;
+  - [x] Instalação;
   - [ ] Tipos básicos;
   - [ ] Classes e Interfaces (POO);
   - [ ] Tipos Avançados;
