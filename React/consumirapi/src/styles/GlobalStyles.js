@@ -29,6 +29,15 @@ export default createGlobalStyle`
         border-radius: 4px;
         font-weight: bold;
         box-shadow: 0 0 7px 0 ${colors.primaryColor};
+        transition: all 300ms;
+    }
+
+    button:hover {
+        filter: brightness(85%);
+    }
+
+    button:active{
+        transform: scale(0.95);
     }
 
     a {
@@ -50,7 +59,7 @@ export default createGlobalStyle`
 `;
 
 export const Container = styled.section`
-  max-width: 360px;
+  max-width: 480px;
   background: #fff;
   margin: 30px auto;
   padding: 30px;
