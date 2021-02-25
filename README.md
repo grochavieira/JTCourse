@@ -24,9 +24,9 @@ Conteúdos que foram ministrados: Javascript e TypeScript - front-end e back-end
   - [x] Projeto Agenda;
   - [x] Deploy da aplicação (Projeto Agenda);
   - [x] Criando uma API REST;
-- [ ] React:
+- [x] React:
   - [x] Básico;
-  - [ ] Redux + Redux Saga (Avançado);
+  - [x] Redux + Redux Saga (Avançado);
 - [ ] TypeScript:
   - [x] Instalação;
   - [ ] Tipos básicos;
