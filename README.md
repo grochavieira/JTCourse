@@ -8,7 +8,7 @@ Conteúdos que foram ministrados: Javascript e TypeScript - front-end e back-end
 
 ## 📖 Seções do curso que aprendi até o momento
 
-- [ ] JavaScript:
+- [x] JavaScript:
   - [x] Básico;
   - [x] Lógica de Programação;
   - [x] Funções (Avançado);
@@ -17,8 +17,8 @@ Conteúdos que foram ministrados: Javascript e TypeScript - front-end e back-end
   - [x] Classes;
   - [x] assíncrono;
   - [x] Tooling e ES6 Modules;
-  - [ ] Expressões Regulares;
-  - [ ] Diversos;
+  - [x] Expressões Regulares;
+  - [x] Diversos;
 - [x] Node:
   - [x] JavaScript Node;
   - [x] Projeto Agenda;
@@ -29,9 +29,9 @@ Conteúdos que foram ministrados: Javascript e TypeScript - front-end e back-end
   - [x] Redux + Redux Saga (Avançado);
 - [ ] TypeScript:
   - [x] Instalação;
-  - [ ] Tipos básicos;
-  - [ ] Classes e Interfaces (POO);
-  - [ ] Tipos Avançados;
+  - [x] Tipos básicos;
+  - [x] Classes e Interfaces (POO);
+  - [x] Tipos Avançados;
   - [ ] Generics (Generic Type);
   - [ ] Decorators;
   - [ ] Namespaces e modules;
