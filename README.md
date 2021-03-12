@@ -32,9 +32,9 @@ Conteúdos que foram ministrados: Javascript e TypeScript - front-end e back-end
   - [x] Tipos básicos;
   - [x] Classes e Interfaces (POO);
   - [x] Tipos Avançados;
-  - [ ] Generics (Generic Type);
-  - [ ] Decorators;
-  - [ ] Namespaces e modules;
+  - [x] Generics (Generic Type);
+  - [x] Decorators;
+  - [x] Namespaces e modules;
   - [ ] Princípios SOLID (S.O.L.I.D);
   - [ ] Testes com Jest;
   - [ ] React;
