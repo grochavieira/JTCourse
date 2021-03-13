@@ -37,5 +37,4 @@ Conteúdos que foram ministrados: Javascript e TypeScript - front-end e back-end
   - [x] Namespaces e modules;
   - [ ] Princípios SOLID (S.O.L.I.D);
   - [ ] Testes com Jest;
-  - [ ] React;
   - [ ] Design Patterns;
